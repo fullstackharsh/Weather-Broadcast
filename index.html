@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🌤 Weather Forecast</h1>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="city"
+                placeholder="Enter City Name">
+
+            <button id="searchBtn">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+        <div class="buttons">
+
+    <button id="locationBtn">
+        📍 Current Location
+    </button>
+
+    <button id="darkBtn">
+        🌙 Dark Mode
+    </button>
+
+</div>
+
+        <div id="loading" style="display:none; margin:10px 0;">Loading...</div>
+
+        <div class="weather-card">
+
+            <img
+            id="weatherIcon"
+            src="https://openweathermap.org/img/wn/01d@2x.png"
+            alt="Weather">
+
+            <h2 id="cityName">City Name</h2>
+
+            <h1 id="temp">--°C</h1>
+
+            <p id="description">Weather Description</p>
+
+            <div class="details">
+
+                <div class="box">
+                    <i class="fas fa-tint"></i>
+                    <h3>Humidity</h3>
+                    <p id="humidity">--%</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-wind"></i>
+                    <h3>Wind</h3>
+                    <p id="wind">-- km/h</p>
+                </div>
+
+            </div>
+
+        </div>
+
+       <div class="forecast">
+
+<h2>5-Day Forecast</h2>
+
+<div
+id="forecastContainer"
+class="forecast-container">
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
